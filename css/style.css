@@ -1,0 +1,275 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Haken Grotesk';
+    src: url(/results-summary-component-main/assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-family: 'Haken Grotesk';
+    background-color: hsl(222, 100%, 95%);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 700px;
+    height: 450px;
+    align-items: stretch;
+}
+
+
+/*Results*/
+.results {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 15px;
+
+}
+
+.circle {
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    width: 190px;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tittle-box1 {
+    color: hsl(241, 100%, 89%)
+}
+
+h1 {
+    color: white;
+    margin-bottom: 0;
+    font-size: 60px;
+}
+
+.pcircle {
+    color: hsl(241, 100%, 89%);
+    font-weight: bold;
+    margin-top: 0;
+    font-size: 18px;
+}
+
+h2 {
+    color: white;
+}
+
+p {
+    color: hsl(241, 100%, 89%);
+    font-size: 18px;
+    margin-top: 0;
+    padding: 0 15%;
+}
+
+h4 {
+    margin: 0;
+}
+
+
+/*summary*/
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.contenedor-summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.tittle-box2 {
+    padding-top: 10px;
+}
+
+.habilidades {
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    gap: 10px;
+}
+
+.logo {
+    align-items: center;
+    display: flex;
+    padding-right: 10px;
+}
+
+.score {
+    padding-right: 10px;
+    align-items: center;
+}
+
+.primer {
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+}
+
+.red {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsla(0, 100%, 67%, 0.1);
+    border-radius: 10px;
+    padding: 15px 0;
+}
+
+.yellow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsla(39, 100%, 56%, 0.1);
+    border-radius: 10px;
+    padding: 15px 0;
+}
+
+.green {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsla(166, 100%, 37%, 0.1);
+    border-radius: 10px;
+    padding: 15px 0;
+}
+
+.blue {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsla(234, 85%, 45%, 0.1);
+    border-radius: 10px;
+    padding: 15px 0;
+}
+
+span {
+    color: hsl(242, 100%, 86%)
+    ;
+}
+
+/*Skills*/
+
+#reaction {
+color: hsl(0, 100%, 67%);
+font-weight: bold;
+}
+
+#memory {
+color: hsl(39, 100%, 56%);
+font-weight: bold;
+}
+
+#verbal {
+color: hsl(166, 100%, 37%);
+font-weight: bold;
+}
+
+#visual {
+color: hsl(234, 85%, 45%);
+font-weight: bold;
+}
+
+/*Boton*/
+
+.boton {
+margin-top: 40px;
+background-color: hsl(224, 30%, 27%);
+color: hsl(221, 100%, 96%);
+border-radius: 30px;
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+
+.boton:active {
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+
+/*Media Query*/
+
+@media screen and (max-width: 375px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .circle {
+        width: 120px;
+        height: 120px;
+    }
+
+
+
+    .results {
+        height: 40%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        justify-content: flex-start;
+    }
+
+    body {
+        align-items: flex-start;
+    }
+
+    .summary {
+        justify-content: flex-start;
+        height: 60%;
+    }
+
+    .contenedor-summary {
+        height: 100%;
+    }
+
+    h1 {
+        font-size: 3em;
+        margin: 0;
+        padding-top: 20px;
+    }
+
+    h2 {
+        margin: 0;
+        padding-top: 10px;
+    }
+
+    h3 {
+        margin: 0;
+        padding: 15px 0;
+    }
+
+
+    .tittle-box2 {
+        margin: 0;
+        padding: 20px 0;
+    }
+
+    p {
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    button {
+        margin-top: 20px;
+    }
+
+    
+}
